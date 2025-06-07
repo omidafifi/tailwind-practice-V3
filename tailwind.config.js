@@ -1,8 +1,12 @@
-/** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js,jsx,ts,tsx,css}"],
+  content: ["./**/*.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        roboto: ['Roboto', 'sans-serif'],
+        savate: ['Savate', 'sans-serif'], // ← این خط باید با ویرگول تمام بشه
+      },
+    },
   },
   plugins: [],
 };
