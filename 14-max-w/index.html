@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>14-Max-w/Max-h</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+<!-- 	•	max-w-[700px]: عرض عنصر نمی‌تونه از ۷۰۰ پیکسل بیشتر بشه.
+	•	تا وقتی صفحه کوچک‌تر از ۷۰۰px هست، عنصر هم کوچک میشه.
+	•	ولی اگه صفحه بزرگ‌تر بشه، عنصر تا ۷۰۰ولی اگه صفحه بزرگ‌تر بشه، عنصر تا px بزرگ میشه و بعد متوقف میشه. -->
+    <div class="max-w-[700px] bg-zinc-600 text-white p-5 m-2">
+        محتوا
+      </div>
+      <!-- 	•	min-w-[350px]: عرض عنصر کمتر از ۳۵۰ پیکسل نمی‌تونه بشه.
+	•	وقتی صفحه رو کوچک می‌کنی، عنصر حداقل تا ۳۵۰ باقی می‌مونه. -->
+    <div class="min-w-[350px] bg-cyan-700 text-white p-4 rounded">
+        متن
+      </div>
+      <!-- 	size یعنی عرض و ارتفاع برابر (مربع).
+	•	مثلاً: size-8 یعنی w-8 و h-8 همزمان (۲rem × ۲rem).
+ -->
+ <div class="size-8 bg-black"></div>       <!-- مربع ۲rem -->
+ <div class="size-96 bg-red-500"></div>    <!-- مربع ۲۴rem -->
+ <div class="size-1/2 bg-blue-500"></div>  <!-- نصف عرض والد -->
+ <!-- 	•	min-h-screen: یعنی ارتفاع عنصر حداقل اندازهٔ کل صفحه نمایش باشد.
+	•	مناسب برای ایجاد بک‌گراند تمام‌صفحه. -->
+    <div class="min-h-screen bg-red-100 p-5">
+        <div class="bg-white p-5 rounded-xl">
+          Lorem ipsum...
+        </div>
+      </div>
+    
+</body>
+</html>
