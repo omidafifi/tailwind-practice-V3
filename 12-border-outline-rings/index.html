@@ -4,10 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>12-border-outline-rings</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-        
+          <!-- Border with content •	مستقیم به خود عنصر اعمال می‌شه (داخل خود باکس عنصر).
+	•	برای طراحی ظاهری استفاده می‌شه (مثلاً دور دکمه یا کارت یک خط بذاری)-->
+         <div class="text-2xl font-bold border-4  border-red-800 m-5"> Border with content •	مستقیم به خود عنصر اعمال می‌شه (داخل خود باکس عنصر).
+            •	برای طراحی ظاهری استفاده می‌شه (مثلاً دور دکمه یا کارت یک خط بذاری)-</div>
+         <br>
+          <!-- outline 	برای نشون دادن focus یا انتخاب‌شدن یه عنصره (مخصوصاً برای دسترسی بهتر با کیبورد).
+	•	اون هم مستقیم روی عنصر قرار می‌گیره ولی بیرون از border ظاهر می‌شه.
+	•	معمولاً نازک‌تره، و فقط یه حالت ساده‌ی خط داره.-->
+         <div class="text-2xl outline outline-4 -outline-offset-6 outline-red-500 m-5">	برای نشون دادن focus یا انتخاب‌شدن یه عنصره (مخصوصاً برای دسترسی بهتر با کیبورد).
+            •	اون هم مستقیم روی عنصر قرار می‌گیره ولی بیرون از border ظاهر می‌شه.
+            •	معمولاً نازک‌تره، و فقط یه حالت ساده‌ی خط داره.</div>
+            <!-- 	•	یه ویژگی مخصوص Tailwind هست (در CSS عادی نیست).
+	•	شبیه به outline هست ولی با استفاده از box-shadow ساخته می‌شه.
+	•	بیرون از عنصر نشون داده می‌شه (و می‌تونی رنگ و فاصله و ضخامتش رو کنترل کنی).
+	•	برای هایلایت کردن، تاکید تصویری و بازخورد بصری خیلی استفاده می‌شه. -->
+        <div class="text-2xl ring ring-4 ring-offset-3 ring-blue-950">	•	یه ویژگی مخصوص Tailwind هست (در CSS عادی نیست).
+            •	شبیه به outline هست ولی با استفاده از box-shadow ساخته می‌شه.
+            •	بیرون از عنصر نشون داده می‌شه (و می‌تونی رنگ و فاصله و ضخامتش رو کنترل کنی).
+            •	برای هایلایت کردن، تاکید تصویری و بازخورد بصری خیلی استفاده می‌شه.</div>
         
 </body>
 </html>
