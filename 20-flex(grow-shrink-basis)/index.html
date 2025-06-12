@@ -7,12 +7,40 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body > 
-         <div class="flex m-4  ">    
-             <div class="w-12 p-3 m-4 h-12 bg-green-500">1</div>
-             <div class="w-12 p-3 m-4 h-12 bg-blue-500">2</div>
-             <div class="w-12 p-3 m-4 h-12 bg-sky-500">3</div>
-             <div class="w-12 p-3 m-4 h-12 bg-yellow-500">4</div>
-             <div class="w-12 p-3 m-4 h-12 bg-red-500">5</div>
-         </div>
+    <!-- <div class="flex m-4 ">     -->
+        <!-- Grow khali dare safhe ro bozorg mikone ama 0 va 1 kar nakard  -->
+         <!-- <div class="w-12 p-3 m-4 h-12 bg-green-500 grow ">1</div> -->
+         <!-- shrink ke dadam kare khasi anjam nashod  -->
+         <!-- <div class="w-12 p-3 m-4 h-12 bg-blue-500 shrink-0 ">2</div> -->
+         <!-- basis eleman ro small kard fekr konam dare be un size mide  -->
+         <!-- <div class="w-12 p-3 m-4 h-12 bg-sky-500  basis-5">3</div> -->
+         <!-- shorthand flex baraye hamash ro berim bezanim  -->
+         <!-- <div class="w-12 p-3 m-4 h-12 bg-yellow-500 ">4</div> -->
+         <!-- dar document mige agar hover shod to sizesh ro small kon inam kar nakard  -->
+         <!-- <div class="w-12 p-3 m-4 h-12 bg-red-500 shrink hover:shrink-0">5</div>
+     </div>  -->
+     <div class="flex m-4 ">    
+         <!-- [] default in grow-->
+         <div class="w-12 p-3 m-4 h-12 bg-green-500 grow-[4]">1</div>
+         <div class="w-12 p-3 m-4 h-12 bg-green-500 grow">1</div>
+        <!-- shrink # Gegenteil Grow [] und hat auch default-->
+        <div class="w-12 p-3 m-4 h-12 bg-blue-500  shrink-[4] ">2</div>
+        <div class="w-12 p-3 m-4 h-12 bg-blue-500  shrink-[4] ">2</div>
+         <div class="w-12 p-3 m-4 h-12 bg-blue-500 shrink-[4]  ">2</div>
+        <!-- basis done -->
+         <div class="w-12 p-3 m-4 h-12 bg-sky-500  basis-5/12">3</div>
+         <div class="w-12 p-3 m-4 h-12 bg-pink-600 basis-5">3</div>
+        <!-- shorthand done-->
+        <!-- flex-1	flex: 1 1 0%;
+        flex-auto	flex: 1 1 auto;
+        flex-initial	flex: 0 1 auto;
+        flex-none	flex: none; -->
+         <div class="w-12 p-3 m-4 h-12 bg-yellow-500 flex-auto ">4</div>
+         <div class="w-12 p-3 m-4 h-12 bg-red-500 flex-initial ">5</div>
+     </div>
+         
+         
+         
+         
 </body>
 </html>
