@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>21-Gap-Direction-Wrap-Order</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body> 
+        <!-- Gap -->
+<div class="p4 m-4 flex gap-3">
+    <div class="h-12 w-12 shrink-0 basis-3 bg-red-500">1</div>
+    <div class="h-12 w-12 shrink-0 basis-3 bg-sky-500">2</div>
+    <div class="h-12 w-12 shrink-0 basis-3 bg-pink-500">3</div>
+    <div class="h-12 w-12 shrink-0 basis-3 bg-green-500">4</div>
+    <div class="h-12 w-12 shrink-0 basis-3 bg-slate-500">5</div>
+    <div class="h-12 w-12 shrink-0 basis-3 bg-blue-900">6</div>
+    <div class="h-12 w-12 shrink-0 basis-3 bg-yellow-700">7</div>
+  </div>
+  <!--Direction wrap -->
+  <div class="p4 m-4 flex flex-wrap  gap-3">
+    <div class="h-12 w-12 shrink-0 basis-3 bg-red-500">1</div>
+    <div class="h-12 w-12 shrink-0 basis-3 bg-sky-500">2</div>
+    <div class="h-12 w-12 shrink-0 basis-3 bg-pink-500">3</div>
+    <div class="h-12 w-12 shrink-0 basis-3 bg-green-500">4</div>
+    <div class="h-12 w-12 shrink-0 basis-3 bg-slate-500">5</div>
+    <div class="h-12 w-12 shrink-0 basis-3 bg-blue-900">6</div>
+    <div class="h-12 w-12 shrink-0 basis-3 bg-yellow-700">7</div>
+    <div class="h-12 w-12 shrink-0 basis-3 bg-yellow-700">8</div>
+    <div class="h-12 w-12 shrink-0 basis-3 bg-yellow-700">9</div>
+    <div class="h-12 w-12 shrink-0 basis-3 bg-yellow-700">10</div>
+    <div class="h-12 w-12 shrink-0 basis-3 bg-yellow-700">11</div>
+    <div class="h-12 w-12 shrink-0 basis-3 bg-yellow-700">12</div>
+    <div class="h-12 w-12 shrink-0 basis-3 bg-yellow-700">13</div>
+    <div class="h-12 w-12 shrink-0 basis-3 bg-yellow-700">14</div>
+    <div class="h-12 w-12 shrink-0 basis-3 bg-yellow-700">15</div>
+    <div class="h-12 w-12 shrink-0 basis-3 bg-yellow-700">16</div>
+  </div>
+  <!--Direction wrap-reverse -->
+  <div class="p4 m-4 flex flex-wrap-reverse  gap-3">
+    <div class="h-12 w-12 shrink-0 basis-3 bg-red-500">1</div>
+    <div class="h-12 w-12 shrink-0 basis-3 bg-sky-500">2</div>
+    <div class="h-12 w-12 shrink-0 basis-3 bg-pink-500">3</div>
+    <div class="h-12 w-12 shrink-0 basis-3 bg-green-500">4</div>
+    <div class="h-12 w-12 shrink-0 basis-3 bg-slate-500">5</div>
+    <div class="h-12 w-12 shrink-0 basis-3 bg-blue-900">6</div>
+    <div class="h-12 w-12 shrink-0 basis-3 bg-yellow-700">7</div>
+    <div class="h-12 w-12 shrink-0 basis-3 bg-yellow-700">8</div>
+    <div class="h-12 w-12 shrink-0 basis-3 bg-yellow-700">9</div>
+    <div class="h-12 w-12 shrink-0 basis-3 bg-yellow-700">10</div>
+    <div class="h-12 w-12 shrink-0 basis-3 bg-yellow-700">11</div>
+    <div class="h-12 w-12 shrink-0 basis-3 bg-yellow-700">12</div>
+    <div class="h-12 w-12 shrink-0 basis-3 bg-yellow-700">13</div>
+    <div class="h-12 w-12 shrink-0 basis-3 bg-yellow-700">14</div>
+    <div class="h-12 w-12 shrink-0 basis-3 bg-yellow-700">15</div>
+    <div class="h-12 w-12 shrink-0 basis-3 bg-yellow-700">16</div>
+  </div>
+  <!--Direction col and col-reverse -->
+  <div class="p4 m-4 flex flex-col  gap-3">
+    <div class="h-12 w-12 shrink-0 basis-3 bg-red-500">1</div>
+    <div class="h-12 w-12 shrink-0 basis-3 bg-sky-500">2</div>
+    <div class="h-12 w-12 shrink-0 basis-3 bg-pink-500">3</div>
+    <div class="h-12 w-12 shrink-0 basis-3 bg-green-500">4</div>
+    <div class="h-12 w-12 shrink-0 basis-3 bg-slate-500">5</div>
+    <div class="h-12 w-12 shrink-0 basis-3 bg-blue-900">6</div>
+    <div class="h-12 w-12 shrink-0 basis-3 bg-yellow-700">7</div>
+    <div class="h-12 w-12 shrink-0 basis-3 bg-yellow-700">8</div>
+    <div class="h-12 w-12 shrink-0 basis-3 bg-yellow-700">9</div>
+    <div class="h-12 w-12 shrink-0 basis-3 bg-yellow-700">10</div>
+    <div class="h-12 w-12 shrink-0 basis-3 bg-yellow-700">11</div>
+    <div class="h-12 w-12 shrink-0 basis-3 bg-yellow-700">12</div>
+    <div class="h-12 w-12 shrink-0 basis-3 bg-yellow-700">13</div>
+    <div class="h-12 w-12 shrink-0 basis-3 bg-yellow-700">14</div>
+    <div class="h-12 w-12 shrink-0 basis-3 bg-yellow-700">15</div>
+    <div class="h-12 w-12 shrink-0 basis-3 bg-yellow-700">16</div>
+  </div>
+  <!--Order -->
+  <div class="p4 m-4 flex order-3 gap-3">
+    <div class="h-12 w-12 shrink-0 basis-3 order-16 bg-red-500">1</div>
+    <div class="h-12 w-12 shrink-0 basis-3 order-15 bg-sky-500">2</div>
+    <div class="h-12 w-12 shrink-0 basis-3 order-14 bg-pink-500">3</div>
+    <div class="h-12 w-12 shrink-0 basis-3 order-13 bg-green-500">4</div>
+    <div class="h-12 w-12 shrink-0 basis-3 order-12 bg-slate-500">5</div>
+    <div class="h-12 w-12 shrink-0 basis-3 order-11 bg-blue-900">6</div>
+    <div class="h-12 w-12 shrink-0 basis-3 order-10 bg-yellow-700">7</div>
+    <div class="h-12 w-12 shrink-0 basis-3 order-9 bg-yellow-700">8</div>
+    <div class="h-12 w-12 shrink-0 basis-3 order-8 bg-yellow-700">9</div>
+    <div class="h-12 w-12 shrink-0 basis-3 order-7 bg-yellow-700">10</div>
+    <div class="h-12 w-12 shrink-0 basis-3 order-6 bg-yellow-700">11</div>
+    <div class="h-12 w-12 shrink-0 basis-3 order-5 bg-yellow-700">12</div>
+    <div class="h-12 w-12 shrink-0 basis-3 order-4 bg-yellow-700">13</div>
+    <div class="h-12 w-12 shrink-0 basis-3 order-3 bg-yellow-700">14</div>
+    <div class="h-12 w-12 shrink-0 basis-3 order-2 bg-yellow-700">15</div>
+    <div class="h-12 w-12 shrink-0 basis-3 order-1 bg-yellow-700">16</div>
+  </div>
+    
+</body>
+</html>
