@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>27 Manual Dark Mode</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="w-57 h-40 shadow-2xl border-4 p-30 m-52 text-red-500"> 
+        Header
+        <p class="font-bold text-red-500">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, saepe tempora ipsa quo nihil cupiditate architecto voluptatem nam fugiat non mollitia magni rerum delectus!
+        </p>
+    </div>
+
+    <button class="m-5 border-4 shadow-xl hover:shadow-inner hover:bg-blue-700" id="button">
+        Click
+    </button>
+
+    <script>
+        document.getElementById("button").addEventListener("click", () => {document.documentElement.classList.toggle(
+  'dark',)});
+    </script> 
+</body>
+</html>

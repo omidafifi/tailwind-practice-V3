@@ -3,10 +3,11 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        roboto: ['Roboto', 'sans-serif'],
-        savate: ['Savate', 'sans-serif'], // ← این خط باید با ویرگول تمام بشه
+        roboto: ["Roboto", "sans-serif"],
+        savate: ["Savate", "sans-serif"], // ← این خط باید با ویرگول تمام بشه
       },
     },
   },
   plugins: [],
+  darkMode: "selector",
 };
